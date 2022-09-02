@@ -1,20 +1,28 @@
 <?php 
 
 class Movie{
-    private $name;
+    private $title;
     private $exitDate;
     private $genre;
 
-
-    function __construct($_name, $_exitDate, $_genre)
+    /**
+     * Costruisce l'istanza Movie
+     * 
+     * @param mixed $_title Titolo del film
+     * 
+     * @param mixed $_exitDate Data di uscita del film
+     * 
+     * @param mixed $_genre Genere cinematografico del film
+     */
+    function __construct($_title, $_exitDate, $_genre)
     {
-        $this->name = $_name;
+        $this->title = $_title;
         $this->exitDate = $_exitDate;
         $this->genre = $_genre;
     }
 
-    public function getName(){
-        return $this->name;
+    public function getTitle(){
+        return $this->title;
     }
 
     public function getExitDate(){
